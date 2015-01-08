@@ -26,7 +26,7 @@
             var result = snail.Generate({ 
                 data: getJson(), 
                 clockwise: true, // D3 y axis is upside down
-                position: "right",
+                startPosition: "right",
                 positiveCoordinates: true,
                 valueSelector: function(element) {
                     return parseInt(element.value.replace(/\s+/g, '')) / 100;
